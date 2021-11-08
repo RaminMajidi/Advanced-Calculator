@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: large;
+}
+body{
+    background-color: var(--mainBlack);
+}
+:root{
+    --color1:rgb(145, 180, 255);
+    --color2:rgb(171, 244, 253);
+    --color3:rgb(253, 171, 94);
+    --mainWhite:#fff;
+    --mainBlack:#1d1d1d;
+    --mainGray:#494949;
+    --mainRed:rgb(238, 3, 85);
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    padding:5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #1d1d1d;
+    box-shadow: inset 5px -5px 0px #141414,
+                inset -5px 5px 0px #262626;
+}
+#lblDR{
+    position: relative;
+    left:250px;
+    top:-205px;
+    opacity:.5;
+}
+#inputCharacter{
+    display: block;
+    padding: 5px;
+    margin:15px auto 10px auto;
+    width: 96%;
+    height:40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(202, 201, 201);
+    color:var(--mainRed);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0,0.179),
+    -4px -4px 4px rgb(48, 48,48 );
+}
+#inputcharacter:focus{
+        font-weight: bold;
+        box-shadow: -4px -4px 4px rgb(0, 0, 0,0.179),
+        4px 4px 4px rgb(48, 48,48 );
+}
+
+#btnClear{
+    background-color: red;
+}
+.c1{
+    background-color: var(--color1);
+    }
+.c2{
+        background-color: var(--color2);
+    }
+.c3{
+    background-color: var(--color3);
+}
+.btn_select{
+    font-size:small;
+    background-color: darkcyan
+    
+}
+button{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin: 2px;
+    text-align: center;
+}
+button:hover{
+    background-color: var(--mainGray);
+    color: var(--mainRed);
+    font-weight: bold;
+}
+.btn_container{
+    display:grid;
+    grid-template-areas: "btnNumber btnCalculation";
+    /* border: 4px solid violet; */
+}
+.number_container{
+    grid-area: btnNumber;
+    /* border: 2px solid red; */
+}
+.Calculations_container{
+    grid-area: btnCalculation;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid blue; */   
+}
+
+#btnClear:hover{
+    color: var(--mainWhite);
+}
