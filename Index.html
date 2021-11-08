@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input_number">
+           
+            <input type="text" id="inputCharacter" placeholder="0" readonly>
+        </div>
+        <div class="btn_container">
+        <div class="number_container">
+            <button class="btn_number" value="1" data-number>1</button>
+            <button class="btn_number" value="2" data-number>2</button>
+            <button class="btn_number" value="3" data-number>3</button>
+            <br>
+            <button class="btn_number" value="4" data-number>4</button>
+            <button class="btn_number" value="5" data-number>5</button>
+            <button class="btn_number" value="6" data-number>6</button>
+            <br>
+            <button class="btn_number" value="7" data-number>7</button>
+            <button class="btn_number" value="8" data-number>8</button>
+            <button class="btn_number" value="9" data-number>9</button>
+            <br>
+            <button class="btn_number" value="." data-number>.</button>
+            <button class="btn_number" value="0" data-number id="btnZero">0</button>
+            <button class="btn_top" value="C"  id="btnClear">C</button>
+        </div>
+
+        <div class="Calculations_container">
+          <button class="Calculation c1" value="+" data-charcter>+</button>
+          <button class="Calculation c1" value="-" data-charcter>-</button>
+          <button class="Calculation c1" value="*" data-charcter>*</button>
+          <button class="Calculation c1" value="/" data-charcter>/</button>
+          <button class="Calculation c1" value="%" data-charcter>%</button>
+          <button class="Calculation c2" value="sin" data-Advans>sin</button>
+          <button class="Calculation c2" value="tan" data-Advans>tan</button>
+          <button class="Calculation c2" value="cos" data-Advans>cos</button>
+          <button class="Calculation c1" value="x^" data-charcter>x^</button>
+          <button class="Calculation c2" value="x2" data-Advans>x2</button>
+          
+         
+          <button class="Calculation c2" value="√" data-advans>√</button>
+          <button class="Calculation c2" value="π" id="numP">π</button>
+         
+          
+          
+          <button class="btn_top c3" value="="  id="btnResult">=</button>
+          <button class="btn_top c3" value="back"  id="btnBack">&#8594;</button>
+          <button class="Calculation btn_select" value="deg"  id="btnDeg">Deg</button>
+          <button class="Calculation btn_select " value="rad" id="btnRad">Rad</button>
+         
+        </div>
+        <span id="lblDR"></span>
+    </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
